@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous places in Da Lat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Famous places in Da Lat</h1>
+    
+    <div id="image-container">
+        <p id="image-text">Hover over an image below to display here.</p>
+        <img id="main-image" src="Dalat_city.jpg" alt="Da Lat" />
+    </div>
+
+    <div class="preview-container">
+        <div class="image-container">
+            <img class="preview" src="ValleyOfLove.jpg"  onmouseover="upDate(this)" onmouseout="undo()">
+            <p>Valley Of Love</p>
+        </div>
+        <div class="image-container">
+            <img class="preview" src="XuanHuong_Lake.jpg" onmouseover="upDate(this)" onmouseout="undo()">
+            <p>Xuan Huong Lake</p>
+        </div>
+        <div class="image-container">
+            <img class="preview" src="RoBin_Hill.jpg" onmouseover="upDate(this)" onmouseout="undo()">
+            <p>RoBin Hill</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
