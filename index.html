@@ -5,30 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Famous places in Da Lat</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
-<body>
-    <h1> Famous places in Da Lat</h1>
+<body onload="initializeGallery()">
+    <h1>Famous places in Da Lat</h1>
     
     <div id="image-container">
         <p id="image-text">Hover over an image below to display here.</p>
-        <img id="main-image" src="Dalat_city.jpg" alt="Da Lat" />
+        <img id="main-image" src="Dalat_city.jpg" alt="Da Lat city view" />
     </div>
 
     <div class="preview-container">
         <div class="image-container">
-            <img class="preview" src="ValleyOfLove.jpg"  onmouseover="upDate(this)" onmouseout="undo()">
+            <img class="preview" src="ValleyOfLove.jpg" alt="Valley of Love, Da Lat" tabindex="0" onfocus="upDate(this)" onblur="undo()" onmouseover="upDate(this)" onmouseout="undo()">
             <p>Valley Of Love</p>
         </div>
         <div class="image-container">
-            <img class="preview" src="XuanHuong_Lake.jpg" onmouseover="upDate(this)" onmouseout="undo()">
+            <img class="preview" src="XuanHuong_Lake.jpg" alt="Xuan Huong Lake, Da Lat" tabindex="0" onfocus="upDate(this)" onblur="undo()" onmouseover="upDate(this)" onmouseout="undo()">
             <p>Xuan Huong Lake</p>
         </div>
         <div class="image-container">
-            <img class="preview" src="RoBin_Hill.jpg" onmouseover="upDate(this)" onmouseout="undo()">
+            <img class="preview" src="RoBin_Hill.jpg" alt="RoBin Hill, Da Lat" tabindex="0" onfocus="upDate(this)" onblur="undo()" onmouseover="upDate(this)" onmouseout="undo()">
             <p>RoBin Hill</p>
         </div>
+        <div class="image-container">
+            <img class="preview" src="kham-pha-dinh-langbiang-noc-nha-cua-da-lat-1-1634525379.jpg" alt="Langbiang Mountain, Da Lat" tabindex="0" onfocus="upDate(this)" onblur="undo()" onmouseover="upDate(this)" onmouseout="undo()">
+            <p>Langbiang Mountain</p>
+        </div>
+        <div class="image-container">
+            <img class="preview" src="thien-vien-truc-lam-da-lat-1-768x509.jpg" alt=" Truc Lam Zen Monastery, Da Lat" tabindex="0" onfocus="upDate(this)" onblur="undo()" onmouseover="upDate(this)" onmouseout="undo()">
+            <p> Truc Lam Zen Monastery</p>
+        </div>
+        <div class="image-container">
+            <img class="preview" src="nha_tho_domain_tgroup_travel-4.jpg" alt="Domaine de Marie Church, Da Lat" tabindex="0" onfocus="upDate(this)" onblur="undo()" onmouseover="upDate(this)" onmouseout="undo()">
+            <p>Domaine de Marie</p>
+        </div>
     </div>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
